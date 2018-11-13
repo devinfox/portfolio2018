@@ -1,8 +1,18 @@
+@font-face {
+    font-family: Simplifica;
+    src: url('../font/SIMPLIFICA\ Typeface.ttf') format('truetype');
+  }
+
 body {
 	font-size: 14px;
     color: #333;
     background-color: #fff;
-    letter-spacing: 1px;
+	letter-spacing: 1px;
+	font-family: Simplifica
+}
+
+p {
+	font-size: 16px;
 }
 
 .overlay {
@@ -15,6 +25,10 @@ body {
 
 .slides-navigation {
 	z-index: 6;
+}
+
+.nav-link {
+	font-size: 16px;
 }
 
 .slides-navigation .prev,
@@ -45,11 +59,16 @@ body {
     margin-top: -125px;
 }
 
+.heading {
+	color: #78909C !important;
+}
+
 .titleMessage .heading p {
 	color: #fff;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
     font-weight: 100;
-    letter-spacing: 7px;
+	letter-spacing: 7px;
+	align-content: center;
 }
 
 .titleMessage .heading .main {
@@ -64,13 +83,19 @@ body {
 	padding: 100px 0;
 }
 
+.portfolio-section {
+	bottom: 100%;
+}
+
+
+
 .aboutImage {
 	max-width: 100%;
 }
 
 .skillsSection,
 .contactSection {
-	background-color: #60a3bc;
+	background-color: #78909C;
 	color: #fff;
 }
 
@@ -139,9 +164,13 @@ body {
 
 .squareContent h2 {
 	font-size: 56px;
-	margin-bottom: 10px;
+	margin: auto;
 	font-weight: 400;
-	color: #60a3bc;
+
+}
+
+.contactHeader {
+	color: white !important;
 }
 
 .squareContent h3 {
@@ -167,7 +196,14 @@ body {
     display: inline-block;
     margin-top: 20px;
     border: 1px solid #fff;
-    border-radius: 2px;
+}
+
+.downloadButton {
+	color: #78909C;
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid #78909C;
 }
 
 .contactButton:hover {
@@ -189,8 +225,8 @@ body {
 }
 
 .filter .current {
-	background-color: #60a3bc;;
-	border-color: #60a3bc;
+	background-color: #78909C;;
+	border-color: #78909C;
 	color: #fff;
 }
 
@@ -250,7 +286,7 @@ body {
 .items a {
 	width: 40px;
     height: 40px;
-    background-color: #60a3bc;
+    background-color: #78909C;
     position: relative;
     display: inline-block;
 
@@ -314,7 +350,7 @@ body {
 }
 
 .copyrightSection {
-	background-color: #60a3bc;
+	background-color: #78909C;
 	color: #fff;
 	padding: 30px 5px;
 }
@@ -324,7 +360,7 @@ body {
 }
 
 #navigation {
-	background-color: #60a3bc;
+	background-color: #78909C;
     padding: 20px 10px;
     z-index: 100;
     width: 100%;
@@ -371,9 +407,9 @@ body {
 
 
 .btn {
-	background-color: #60a3bc;
-	border: none;
-	color: white;
+	background-color: transparent;
+	border: 1px solid #78909C;
+	color: #78909C;
 	padding: 12px 30px;
 	font-size: 16px;
 	cursor: pointer;
@@ -382,20 +418,52 @@ body {
   }
 
 
-  .statsSection {
-	  align-content: center;
-	  text-align: center;
+.resume-download {
+	color: #78909C !important;
+}
+
+#contact {
+	color: white !important;
+}
+
+@media screen and (min-width: 768px) {
+	#resume {
+		width:50%;
+		float: left;
+		align-content: center;
+		margin: auto;
+	}
+	
+	#contact {
+		width:50%;
+		float: left;
+		color: white;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+	.portfolio-section {
+		bottom: 100%;
+		margin-top: 400px;
+	}
+	
   }
 
+.mobile {
+	max-width: 100%;
+}
+
+.slides-container-mobile {
+	display: none !;
+}
+
+.slides-container {
+	display: block !important;
+}
 
 
-
-
-
-
-
-
-
-
-
-
+.subHeading {
+	font-size: 16px;
+}
