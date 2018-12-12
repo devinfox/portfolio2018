@@ -97,6 +97,7 @@ p {
 .contactSection {
 	background-color: #78909C;
 	color: #fff;
+
 }
 
 .skill {
@@ -166,8 +167,10 @@ p {
 	font-size: 56px;
 	margin: auto;
 	font-weight: 400;
+	letter-spacing: 1.5px !important;
 
 }
+
 
 .contactHeader {
 	color: white !important;
@@ -192,7 +195,7 @@ p {
 
 .contactButton {
 	color: #fff;
-    padding: 15px 20px;
+    padding: 10px 20px;
     display: inline-block;
     margin-top: 20px;
     border: 1px solid #fff;
@@ -200,9 +203,10 @@ p {
 
 .downloadButton {
 	color: #78909C;
-    padding: 15px 20px;
+    padding: 10px 20px;
     display: inline-block;
-    margin-top: 20px;
+	margin-top: 20px;
+	background-color: transparent;
     border: 1px solid #78909C;
 }
 
@@ -426,18 +430,23 @@ p {
 	color: white !important;
 }
 
-@media screen and (min-width: 768px) {
+
+
+@media screen and (min-width: 700px) {
 	#resume {
 		width:50%;
 		float: left;
 		align-content: center;
 		margin: auto;
+		
+		
 	}
 	
 	#contact {
 		width:50%;
 		float: left;
 		color: white;
+		border-top: 1px white;
 	}
 
 	.mobile {
@@ -466,4 +475,8 @@ p {
 
 .subHeading {
 	font-size: 16px;
+}
+
+button {
+	letter-spacing: 1.5px;
 }
