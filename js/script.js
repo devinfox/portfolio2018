@@ -18,8 +18,8 @@ $(document).ready(function() {
 	});
 
 	var typed = new Typed(".typed", {
-		strings: ["Full Stack Web Developer.", "Graphic Designer.", "Creative Director."],
-		typeSpeed: 70,
+		strings: ["Creative Director.", "Photographer.", "Graphic Designer.", "Full Stack Web Developer.", "UX/UI Designer."],
+		typeSpeed: 100,
 		loop: true,
 		startDelay: 1000,
 		showCursor: false
